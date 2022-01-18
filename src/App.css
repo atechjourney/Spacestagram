@@ -1,38 +1,98 @@
-.App {
+
+
+/* Styling the header*/
+header{
+  font-size: 80px;
+  text-align: center;
+  color: #0c3e91;
+  animation-name: evolve;
+  animation-duration: 8s;
+  margin-bottom: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 100px;
+}
+
+h3{
+  font-size: 25px;
+  text-align: center;
+  color: #888888;
+  margin-left: 100px;
+}
+h3:hover{
+  color: #000;
+}
+/* Adding style to the grey text*/
+.nasalink{
+  text-decoration: none;
+  color: #ffffff;
+}
+@keyframes evolve {
+  from {
+    color: #9c0101;
+  }
+  to {
+    color: #0c3e91;
+  }
+}
+
+/* This contains the image, white box, information and then button */
+.container{
+  background-color: #F5F5F5;
+  padding:50px;
+  height: 100%;
+  max-width: 500vh;
+  align-items: center;
+}
+
+.image{
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  height: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img-box{
+  background-color: #ffffff;
+  padding-bottom: 100px;
+  border-radius: 10px;
+  border-bottom: 1px solid #888888;
+  margin: 0px 100px 100px 470px;
+  max-width: 40%;
+  text-align: center;
+}
+.des-container{
+  text-align: left;
+  padding-left: 10px;
+  max-width: 550px;
+  max-width: 100%;
+}
+/* Styling the like and unlike button */
+.butt-like{
+  border: 1px solid #b9b8b8;
+  padding: 10px 20px 10px 20px;
+  box-shadow: 0px 2px 5px #888888; 
+  border-radius: 10px;
+  font-size: 18px;
+  object-fit:contain ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.butt-like:hover{
+  cursor:pointer;
+  background-color: #0c3e91;
+  color: #ffffff;
+  -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+}
+ 
+h1{
+  text-align: center;
+  color: #0c3e91;
+  float: center;
+  margin-left: 200px;
+  margin-top: 300px;
+  padding: 0px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
