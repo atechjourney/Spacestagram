@@ -89,10 +89,15 @@ h1{
   text-align: center;
   color: #0c3e91;
   float: center;
-  margin-left: 200px;
-  margin-top: 300px;
-  padding: 0px;
+}
 
+.load{
+  height:100vh
+  display :flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  align-content: center;
 }
 
 
